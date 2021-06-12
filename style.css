@@ -1,0 +1,832 @@
+.html
+{
+    scroll-behavior: smooth;
+}
+
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+
+/* --------------------- HEADER --------------------------- */
+
+header
+{
+    width: 100%;
+    height: 45px;
+    background: rgba(0,0,0,0.83);
+    display: flex;
+    position: sticky;
+    top:0;
+    z-index: 4;
+    justify-content: center;
+    
+}
+
+nav{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+nav ul li
+{
+    margin: 0 15px;
+    display: block;
+}
+
+nav ul li a
+{
+    color: #d8d8d8;
+    position: relative;
+    padding: 5px 0;
+}
+
+#sign-one,#sign-two,#apple-logo,#apple-shopping
+{
+    display: none;
+    float: left;
+}
+
+#check
+{
+    display: none;
+}
+
+a{
+    text-decoration: none;
+    color: #06c;
+}
+
+i{
+    color: #d8d8d8;
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+
+.corona,.shop-online
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    font-weight: 400;
+    
+}
+.corona{
+    background: #0071E3;
+   
+}
+
+ul li a i:hover,ul li a:hover{
+    color: white;
+}
+
+.search-bar
+{
+    display: none;
+}
+.corona >a{
+    font-size: 13px;
+    color: white;
+    vertical-align: middle;
+}
+
+.corona>a:hover,.shop-online a:hover,.content>div>a:hover,.grid-1 >div> a:hover,.grid>div>.content>a:hover,.grid-box a:hover,#copyrights>a:hover{
+    text-decoration: underline;
+}
+
+.shop-online
+{    
+    background-color: #f7f4f4;
+}
+
+
+.shop-online > p{
+    font-size: 14px;
+    color: rgba(0,0,0,0.8);
+}
+
+
+
+/*---------------------------  MAIN ------------------------ */
+
+
+.card-container
+{
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,1fr);
+    gap: 10px;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+}
+
+.card
+{
+    
+    width: 100vw;
+    height: 640px;
+    position: relative;
+}
+
+#first
+{
+    margin: 0 auto;
+    background: url("./Images/Apple/iphone_12_us__fo0stbby242m_largetall.jpg") no-repeat bottom;
+    
+}
+
+#second
+{
+    background: url("./Images/Apple/iphone_12_pro_us__e5oyysg4k0ya_largetall.jpg") no-repeat bottom;
+}
+
+#third
+{
+    z-index: 3;
+    background: url("./Images/Apple/hero__dvsxv8smkkgi_largetall.jpg") no-repeat bottom;
+    width: 100%;
+    height: 100%;
+}
+#first,#second
+{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.card:nth-child(3)
+{
+    background: black;
+}
+.content,.more-links,.content> h2,.content > h3,.content>p
+{
+    text-align:center;
+}
+.content
+{
+    display: block;
+    padding:20px;
+}
+
+.more-links
+{
+    width: 35%;
+    display: inline-block;
+
+}
+.more-links>a:first-child
+{
+    margin-right: 30px;
+}
+
+.content> h2{
+    font-size: 3.5rem;
+}
+.content > h3{    
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.content > p{
+    color: #86868b;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.content > div >a{    
+    color: rgb(41, 151, 255);
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+#second >.content,#third>.content{
+    color: white;
+}
+
+#second>.content > div >a,.grid-1>div>a,.grid>div>.content>a
+{
+    color: #2997ff;
+}
+
+.image-wrapper
+{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.grid-container
+{
+    margin-top: 10px;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns:repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);    
+    gap: 10px;
+}
+.grid-box
+{
+    width: 100%;
+    height: 520px;  
+}
+
+.one
+{
+    padding: 10px;
+    background: url("./Images/Apple/promo_tile__ivhgndrnkuye_large.jpg") no-repeat bottom;
+}
+
+.two 
+{
+    background: url("./Images/Apple/tile__cauwwcyyn9hy_large.jpg") no-repeat bottom;
+}
+
+.three
+{
+    background: url("./Images/Apple/promo_tile__ivhgndrnkuye_large (1).jpg") no-repeat bottom;
+}
+.four
+{
+    background: url("./Images/Apple/tile__cauwwcyyn9hy_large (1).jpg") no-repeat bottom;
+}
+
+.five
+{
+    background: url("./Images/Apple/tile__cauwwcyyn9hy_large (2).jpg") no-repeat bottom;
+}
+
+.six
+{
+    background: url("./Images/Apple/promo_tile__ivhgndrnkuye_large (2).jpg") no-repeat bottom;
+}
+
+.grid-box > div
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.grid-box div >a:first-child
+{
+    margin-right: 30px;
+}
+.one h1
+{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 500;
+}
+.one h2,.two h2, .three h2,.four h3{ 
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #1d1d1f;
+    font-weight: 500;
+    text-align: center;
+}
+
+.grid-box a{
+    margin: 10px auto;
+    font-size: 1.3rem;
+}
+
+
+.two,.three,.four,.five{
+    padding: 10px;
+}
+
+.four h2
+{
+    color: #1d1d1f;
+    font-size: 2rem;
+    text-align: center;
+}
+.five h2
+{
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #1d1d1f;
+    font-weight: 500;
+    text-align: center;
+    width: 50%;
+    position: relative;
+    left: 25%;
+}
+
+.two > div >div,.three>div>div,.five>div>div,.four>div>div
+{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.six
+{
+    position: relative;
+}
+.tv-plus > picture
+{
+ display: inline-block;
+ text-align: center;
+ margin-bottom: 10px;
+}
+
+.tv-plus
+{
+    padding: 20px;
+    width: auto;
+    height: auto;
+}
+.author
+{
+    text-align: center;
+    left: 3%;
+}
+
+.tv-plus>img
+{
+    width: 80%;
+    margin-top: 10px;
+    height: auto;
+    object-fit: cover;
+}
+.author-content
+{
+    width: 100%;
+    display: block;
+    position: absolute;
+    bottom: 3%;
+    text-align: center;
+}
+.author >h2{
+    color:white;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.author >div>h2{
+    color:white;
+}
+
+.author >div
+{
+
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.author >div a{
+    font-size: 1rem;
+    color: white;
+    margin-right: 15px;
+}
+
+
+.author h2+i{
+    color: white;
+    margin-top: 6px;
+}
+
+
+
+
+/* --------------------- FOOTER ------------------------  */
+
+footer
+{
+    background-color: #f5f5f7;
+}
+.footer-content
+{
+    padding: 20px;
+    margin: 0 auto;
+    width: 70%;
+    color: #86868b;
+}
+ol,.footer-content p
+{
+    font-size: 12px;
+    line-height: 1.33337;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","Helvetica Neue","Helvetica","Arial",sans-serif;
+
+}
+
+.collections
+{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#copyrights>div
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.data p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.data p:first-child{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.data > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.data p{
+    margin-top: 8px;
+}
+
+p+hr
+{
+    margin: 10px 0;
+}
+
+#copyrights
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#copyrights div
+{
+    width: 60%;
+}
+
+
+/* -------------- RESPONSIVE WEB DESIGN ----------------- */
+
+@media (max-width : 650px)
+{
+
+.more-links
+{
+    margin-top: 10px;
+}
+
+#sign-one,#apple-logo,#apple-shopping
+{
+    display: block;
+}
+
+nav
+{
+    margin: 0 30px;
+    width: 100%;
+    justify-content: space-between;
+}
+nav ul
+{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #1d1d1f;
+    top: 45px;
+    left: -100%;
+    text-align: center;
+    transition: 0.5s ease-in-out;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+#apple-search
+{
+    display: none;
+}
+
+
+nav ul li
+{
+    display: block;
+    margin: 10px 0;
+    
+}
+
+ul li:first-child,ul li:last-child
+{
+    display: none;
+}
+
+
+
+#check:checked ~ ul
+{
+    left: 0;
+}
+#check:checked ~ label #sign-one
+{
+    display: none;
+}
+#check:checked ~ label #sign-two
+{
+    width: 16px;
+    display: block;
+}
+
+.search-container
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 250px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    color: #86868b;
+    background-color: rgb(49, 48, 48) ;
+}
+
+.search-bar
+{
+    display: block;
+}
+
+.search-container > input
+{
+    width: max-content;
+    height: 100%;
+    background: transparent;
+    border: none;
+}
+
+.search-container >input::placeholder
+{
+    font-size: 1.1rem;
+}
+.search-container > i
+{
+    margin: 0 15px;
+    color: #d8d8d8;
+}
+.image-wrapper
+{
+    margin: 3px;
+}
+
+
+.corona,.shop-online
+{
+        
+        width: 100%;
+}
+
+
+.corona >a,p,.shop-online>p
+{
+    width: 80%;
+    display: inline;
+    font-size:15px;
+    text-align: center;
+}
+
+
+
+.footer-content
+{
+    width: 100%;
+}
+
+
+.card{
+    height: 58vh;
+}
+
+#first
+{
+    background: url("./Images/Apple/iphone_12_us__fo0stbby242m_small.jpg") no-repeat bottom;
+    
+}
+
+#second
+{
+    background: url("./Images/Apple/iphone_12_pro_us__e5oyysg4k0ya_small.jpg") no-repeat bottom;
+}
+
+#third
+{
+    height: 65vh;
+    background: url("./Images/Apple/hero__dvsxv8smkkgi_small.jpg") no-repeat bottom;
+}
+
+.grid-container
+{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6,1fr);
+}
+
+.grid-box
+{
+    height: 60vh;
+}
+
+.one{
+    background: url("./Images/Apple/promo_tile__ivhgndrnkuye_small.jpg") no-repeat bottom;
+}
+
+.two{
+    background: url("./Images/Apple/tile__cauwwcyyn9hy_small.jpg") no-repeat bottom;
+}
+
+.three
+{
+    background: url("./Images/Apple/promo_tile__ivhgndrnkuye_small\ \(1\).jpg") no-repeat bottom;
+}
+
+.four{
+    padding: 0;
+    position: relative;
+    background: url("./Images/Apple/tile__cauwwcyyn9hy_small\ \(1\).jpg") no-repeat bottom;
+    background-size: cover;
+}
+
+.five{
+    background: url("./Images/Apple/tile__cauwwcyyn9hy_small\ \(2\).jpg") no-repeat bottom;
+}
+
+.six
+{
+    background: url("./Images/Apple/promo_tile__ivhgndrnkuye_small\ \(2\).jpg") no-repeat bottom;
+    background-size: cover;
+}
+
+.five h2
+{
+    width: auto;
+    text-align: center;
+    left: 0;
+    font-size: 1.1rem;
+}
+.ipad-air
+{
+    margin-bottom: 10px;
+}
+
+.ipad-air >h2
+{
+    display: none;
+}
+.content > h2
+{
+    font-size: 2.2rem;
+}
+.content>h3
+{
+    font-size: 1rem;
+}
+.content{
+    padding:10px;
+}
+.content p
+{
+    font-size: 0.9rem;
+}
+.more-links
+{
+    width: 100%;
+}
+.more-links >a
+{
+    
+    font-size: 1.1em;
+}
+
+.footer-content p,ol
+{
+    font-size: 0.8em;
+}
+
+.collections
+{
+    display: none;
+    margin-bottom: 10px;
+}
+.tv-plus > picture
+{
+ display: inline-block;
+ text-align: center;
+ margin-bottom: 10px;
+}
+
+.tv-plus
+{
+    padding: 20px;
+    width: auto;
+    height: auto;
+}
+.author
+{
+    text-align: center;
+    left: 3%;
+}
+
+ol +hr
+{
+    margin-top: 10px;
+}
+
+#copyrights
+{
+    display: flex;
+    flex-direction: column;
+    
+}
+#copyrights p
+{
+    width: 100%;
+}
+#copyrights > div
+{
+    width: auto;
+    margin-top: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#copyrights > div + a
+{
+    margin-top: 10px;
+    text-align: center;
+}
+}
+
+
+/* ------MEDIUM SIZES (>640px) & (<1024px)--------- */
+
+@media all and (min-width : 651px) and (max-width : 1023px)
+{
+
+ul
+{
+    width: 100%;
+}
+
+nav
+{
+    width: 100%;
+}
+
+.collections
+{
+    display: none;
+}
+
+.footer-content
+{
+    width: 90%;
+}
+
+.grid-container
+{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6,1fr);
+}
+
+#first,#second
+{
+    background-size: cover;
+}
+#third
+{
+    background: url("./Images/Apple/hero__dvsxv8smkkgi_small.jpg") no-repeat bottom;    
+}
+
+#copyrights>div
+{
+    display: none;
+}
+}
